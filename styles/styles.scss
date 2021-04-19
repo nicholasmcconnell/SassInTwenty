@@ -1,0 +1,15 @@
+//create varibld
+
+// import underscore scss files into  main scss file
+@import "./variables";
+@import "./header";
+
+//nesting
+
+.contact {
+  @extend header;
+  //overrides @extend
+  background: orange;
+  //calcuation + - / *
+  width: 100% - 20%;
+}

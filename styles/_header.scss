@@ -1,0 +1,21 @@
+//mixin => function in scss that can be used across files
+@mixin flexCenter($direction, $background) {
+  height: 100vh;
+  background: $background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+header {
+  height: 100vh;
+  background: lightblue;
+
+  button {
+    background: $primaryBtn;
+    &:hover {
+      background: chartreuse;
+    }
+  }
+}
